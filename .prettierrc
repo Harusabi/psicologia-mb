@@ -1,0 +1,14 @@
+{
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "useTabs": false,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "experimentalTernaries": true,
+  "semi": true,
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "embeddedLanguageFormatting": "auto",
+  "plugins": ["prettier-plugin-ejs"]
+}

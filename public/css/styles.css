@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: rgb(201, 201, 201);
+  color: rgb(51, 51, 51);
+
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.servicios-barrido-js {
+  position: relative;
+  background-image: url(/images/back2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+
+.servicios-barrido-js::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.5);
+  /* desvanecido */
+  z-index: 0;
+}
+
+.servicios-barrido-js>* {
+  position: relative;
+  z-index: 1;
+}
+
+
+.servicios-barrido-js h1 {
+  font-size: 2.5rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.img-container {
+  width: 16vw;
+  aspect-ratio: 1 / 1
+  height: 30%;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+
+.img-container img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-radius: 50%;
+
+}
+
+.Animate-text {
+  font-size: 2.5rem;
+  opacity: 0;
+  display: inline-block;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-text-js span {
+  animation: fadeInUp 0.5s forwards;
+}
+
+@media (max-width: 768px) {
+  .img-container {
+    width: 40%; /* Ajusta el tamaño */
+    max-width: 150px; /* Limita el tamaño */
+  }
+
+  .servicios-barrido-js h1 {
+    font-size: 2rem; /* Reduce el tamaño del texto */
+  }
+}
