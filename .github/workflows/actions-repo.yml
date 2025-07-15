@@ -1,6 +1,9 @@
 name: Notify chanel in Discord And Deploy
 run-name: Notify and Deploy in Railway
-on: [push]
+on: 
+  push:
+    branches:
+    - main
 jobs:
   Notify-Push:
     runs-on: ubuntu-latest
