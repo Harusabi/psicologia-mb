@@ -1,0 +1,264 @@
+:root {
+  --background-generalColor: #e3bdb7;
+  --background-generalColor-light: #cc877e;
+  --text-colorsHover: rgb(249, 241, 240, 0.5);
+  --button-color: #bb6155;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.navContainer {
+  background-color: var(--background-generalColor);
+}
+
+.navDiv__imgContainer {
+  padding: 10px;
+}
+
+.nav__imgLogo {
+  height: 60px;
+  border-radius: 4em;
+  box-shadow: 0px 0px 10px rgb(255, 255, 255, 0.5);
+}
+
+.navDiv__buttonToggle {
+  border: none;
+  opacity: 0.5;
+}
+
+.navDiv__buttonToggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggles-iconButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconButton {
+  width: 25px;
+  height: 3px;
+  margin: 2px;
+  border-radius: 10px;
+  background-color: var(--background-generalColor-light);
+}
+
+.first__iconButton-animationActive {
+  transform-origin: left;
+  animation: animationActive-one 0.3s ease-in-out forwards;
+}
+
+@keyframes animationActive-one {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(34deg);
+  }
+}
+
+.second__iconButton-animationActive {
+  transform-origin: left;
+  animation: animationActive-second 0.3s ease-in-out forwards;
+}
+
+@keyframes animationActive-second {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.three__iconButton-animationActive {
+  transform-origin: left;
+  animation: animationActive-three 0.3s ease-in-out forwards;
+}
+
+@keyframes animationActive-three {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-34deg);
+  }
+}
+
+.first__iconButton-animationDesactive {
+  transform-origin: left;
+  animation: animationDesactive-one 0.3s ease-in-out forwards;
+}
+
+@keyframes animationDesactive-one {
+  from {
+    transform: rotate(34deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.second__iconButton-animationDesactive {
+  transform-origin: left;
+  animation: animationDesactive-second 0.3s ease-in-out forwards;
+}
+
+@keyframes animationDesactive-second {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.three__iconButton-animationDesactive {
+  transform-origin: left;
+  animation: animationDesactive-three 0.3s ease-in-out forwards;
+}
+
+@keyframes animationDesactive-three {
+  from {
+    transform: rotate(-34deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.nav__ulList {
+  color: #f9f1f0;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2em;
+  margin: 5px;
+}
+
+.nav__ulList:focus {
+  color: var(--background-generalColor-light);
+}
+
+.nav__ulList:hover {
+  color: var(--text-colorsHover);
+  background-color: var(--background-generalColor);
+  border-radius: 10px 0px 0px 10px;
+  transform: translateY(-5px);
+}
+
+.nav__ulList-service:active {
+  transform: translateY(5px);
+}
+
+.nav__ulList-sub {
+  color: #f9f1f0;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.1em;
+}
+
+.nav__ulList-sub:hover {
+  color: var(--text-colorsHover);
+  background-color: var(--background-generalColor);
+}
+
+.navMenu__detachable {
+  background-color: var(--background-generalColor-light);
+}
+
+.navMenu__detachable > li:first-child > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown__submenu {
+  padding: 0;
+}
+
+.submenu__li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.dropdown__submenu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  min-width: 18em;
+  border-radius: 8px;
+  box-shadow: 2px 0px 5px rgb(0, 0, 0, 0.2);
+  background-color: var(--background-generalColor-light);
+}
+
+.navMenu__detachable > li:hover .dropdown__submenu {
+  display: block;
+  animation: animationSubmenu 0.3s ease-in-out;
+}
+
+@keyframes animationSubmenu {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.div__navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__divButton {
+  text-align: center;
+  background-color: var(--button-color);
+  border-radius: 10px;
+  padding: 7px 10px;
+  opacity: 0.5;
+  color: #f9f1f0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar__divButton:hover {
+  box-shadow: 0px 0px 10px var(--background-generalColor-light);
+  opacity: 1;
+}
+
+.navbar__divButton:active {
+  transform: scale(1.05);
+  opacity: 0.5;
+}
+
+@media (min-width: 720px) {
+  .dropdown__submenu {
+    top: 0;
+    left: 100%;
+  }
+}
