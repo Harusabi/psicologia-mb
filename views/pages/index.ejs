@@ -5,13 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     <link href="/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Great+Vibes&display=swap"
       rel="stylesheet" />
   </head>
-  <body>
-    <div class="container" style="">
-      <div class="servicios-barrido-js">
+  <body class="bodyContainer">
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide .bodyDiv__carrusel"
+      data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/firstImage.carrusel.png"
+            class="d-block w-100 divContainer__img"
+            alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/secondImage.carrusel.png"
+            class="d-block w-100 divContainer__img"
+            alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/threeImage.carrusel.png"
+            class="d-block w-100 divContainer__img"
+            alt="..." />
+        </div>
+      </div>
+    </div>
+    <!--<div class="container" style="
+    ">
+     <div class="servicios-barrido-js">
         <div class="img-container">
           <img src="/images/logo-2.jpg" alt="" />
         </div>
@@ -19,6 +46,128 @@
         <span class="Animate-text">Click Emocional</span>
       </div>
     </div>
+  -->
+
+    <%- include("header") %>
+
+    <main class="bodyMain">
+      <section class="bodyMain__sectionArticles">
+        <article class="sectionArticles__divContent">
+          <div class="divContent__divT-one">
+            <span><h3>Historia y</h3></span>
+            <span><h3>motivacion</h3></span>
+          </div>
+
+          <div class="divContent__divP-two">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur sit soluta similique, eaque quasi earum ab autem ut
+              iste in quis ea doloribus, temporibus nemo, animi beatae
+              voluptatum et odit?F
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="bodyMain__sectionArticles article-two">
+        <article class="sectionArticles__divContent divContent-two">
+          <div class="row g-2">
+            <div class="col-8 containerImage__divOne">
+              <img
+                src="/images/logoSinPsicologa.jpg"
+                class="img-fluid w-100 rounded"
+                alt="" />
+            </div>
+            <div class="col-4 containerImage__divTwo">
+              <img
+                src="/images/logoSinPsicologa.jpg"
+                class="img-fluid w-100 mb-2 rounded"
+                alt="" />
+              <img
+                src="/images/logoSinPsicologa.jpg"
+                class="img-fluid w-100 rounded"
+                alt="" />
+            </div>
+          </div>
+          <div class="divContent__divTwo">
+            <div class="divT-articleTwo">
+              <span><h3>Equipo conformado</h3></span>
+            </div>
+
+            <div class="d-none d-lg-block divContent__divP-two divP-articleTwo">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. iste in
+                quis ea doloribus, temporibus nemo, animi beatae voluptatum et
+                odit?F Consectetur sit soluta similique, eaque quasi earum ab
+                autem ut Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Culpa dolorum, modi adipisci cumque tempora aut voluptas
+                nihil accusamus praesentium ducimus obcaecati id totam alias
+                eveniet libero minus repellat. Tempora, suscipit!
+              </p>
+            </div>
+
+            <div class="d-block d-lg-none divB-articleTwo">
+              <div class="articleTwo__containerButton">
+                <button class="navbar__divButton">Mas informacion</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="article-three">
+        <div class="threeDiv__divsContent">
+          <div class="divsContent__div-one">
+            <span><h2>"Objetivo"</h2></span>
+          </div>
+          <div class="divsContent__div-two">
+            <img src="/images/logotipoSinFondo.png" alt="logotipoMilagro" />
+          </div>
+        </div>
+      </section>
+
+      <section class="bodyMain__sectionArticles article-four">
+        <article class="sectionArticles__divContent divContent-four">
+          <div class="divContent__divFour">
+            <div class="divT-articleFour">
+              <span
+                ><h3>Equipo</h3>
+                <h3>conformado</h3></span
+              >
+            </div>
+
+            <div>
+              <div class="d-none d-sm-block divContent__divP-four divP-articleFour">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate excepturi aperiam quia, libero nostrum nam eum
+                  dignissimos ducimus quaerat veniam reprehenderit molestias
+                  officia corporis minima doloremque, voluptatem assumenda.
+                  Nulla, soluta.
+                </p>
+              </div>
+
+              <div class="divB-articleFour">
+                <div class="articleFour__containerButton">
+                  <button class="navbar__divButton">Contactar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="divVideo__contentFour-two">
+          <iframe
+            width="500"
+            height="315"
+            src="https://www.youtube.com/embed/ID_DEL_VIDEO"
+            title="Todo lo que necesitas sobre Psicoterapia online"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+    </main>
     <script src="/js/script.js"></script>
   </body>
 </html>

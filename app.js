@@ -1,4 +1,5 @@
 const express = require('express');
+const open = require('open').default;
 const path = require('path');
 const app = express();
 const port = 3000;
@@ -15,6 +16,7 @@ app.get('/contacto', (req, res) => {
   res.render('contact');
 });
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Example app listening in https://0.0.0.0:${port}`);
+app.listen(port, '192.168.1.8', () => {
+  console.log(`Example app listening in http://192.168.1.8:${port}`);
+  open(`http://192.168.1.8:${port}`);
 });
