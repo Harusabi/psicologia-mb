@@ -12,48 +12,6 @@ body {
   padding: 0;
 }
 
-/* Codigo de Claude, solo para relleno */
-
-header {
-  background-color: #663635;
-  color: #f9f1f0;
-  padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-.logo > img {
-  width: 50px;
-  height: auto;
-  vertical-align: middle;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: #f9f1f0;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #e1999f;
-}
-
 .container-md.hero {
   margin: 2rem auto;
   display: grid;
@@ -62,8 +20,8 @@ nav {
   height: 50%;
   width: 100vw;
   border-radius: 10px;
-  background-color: #663635;
-  color: #f9f1f0;
+  background-color: #f9f1f0;
+  color: #000;
 }
 
 .container-md.hero > h1 {
@@ -80,12 +38,34 @@ nav {
 }
 
 .container-md.contact {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: 1fr;
-  width: 70vw;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
   background-color: #f9f1f0;
+
+  /* align-items: start;
+  justify-content: center; */
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  width: 40%;
+  height: 70vh;
+  margin: 0 auto;
+
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .container-md.contact {
+    width: 90%;
+    height: 50vh;
+    padding: 1rem;
+  }
+}
+.container-md.contact > h2 {
+  font-size: 1.5rem;
+  color: #663635;
+  margin-bottom: 1rem;
 }

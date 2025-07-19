@@ -21,25 +21,7 @@
 </head>
 
 <body>
-  <header>
-    <div class="container-md">
-      <nav>
-        <div class="logo">
-          <img src="images/logo.webp" alt="Logo" />
-        </div>
-
-        <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-
-          <li><a href="#servicios">Servicios</a></li>
-
-          <li><a href="#sobre-mi">Sobre Mí</a></li>
-
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <%- include('../templates/header.ejs') %>
 
   <div class="container-fluid">
     <section class="container-md hero">
@@ -64,24 +46,48 @@
         <p>
           <i class="bi bi-envelope-heart"></i>
           <strong>Email:</strong>
+          test@test.com
         </p>
       </div>
       <div class="container-sm">
         <p>
-          <i class="bi bi-envelope-heart"></i>
-          <strong>Email:</strong>
+          <i class="bi bi-building"></i>
+          <strong>Direccion:</strong>
+          Cra 1 # 1 - 1
         </p>
       </div>
       <div class="container-sm">
         <p>
-          <i class="bi bi-envelope-heart"></i>
-          <strong>Email:</strong>
+          <i class="bi bi-whatsapp"></i>
+          <strong>WhatsApp:</strong>
+          302000000
         </p>
       </div>
+      <div class="container-sm">
+        <p>
+          <i class="bi bi-instagram"></i>
+          <strong>Instragram:</strong>
+          @PsiMilagro_Bolaño
+        </p>
+      </div>
+      <div class="container-sm">
+        <p>
+          <i class="bi bi-facebook"></i>
+          <strong>Facebook:</strong>
+          PsiMilagro Bolaño
+        </p>
     </div>
+    <div class="container-sm">
+        <p>
+          <i class="bi bi-linkedin"></i>
+          <strong>Seccion Virtual:</strong>
+          Click <a href="/contacto">aquí</a> para acceder a la sección virtual.
+        </p>
+      </div>
   </div>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+  <script src="/js/header.js"></script>
 </body>
