@@ -14,7 +14,7 @@ jobs:
           args: |
             ' Push detectado
               Usuario: {{ EVENT_PAYLOAD.pusher.name }}
-              Repositorio: {{ EVENT_PAYLOAD.repository }}
+              Repositorio: {{ EVENT_PAYLOAD.repository.full_name }}
               Rama: {{ EVENT_PAYLOAD.ref }}
               Ultimo commit: {{ EVENT_PAYLOAD.head_commit.message }}
               Tiempo del commit: {{ EVENT_PAYLOAD.head_commit.timestamp }}
