@@ -16,7 +16,7 @@ app.get('/contacto', (req, res) => {
   res.render('contact');
 });
 
-app.listen(port, '192.168.1.8', () => {
-  console.log(`Example app listening in http://192.168.1.8:${port}`);
-  open(`http://192.168.1.8:${port}`);
+app.listen(port, '192.168.1.26', () => {
+  console.log(`Example app listening in http://192.168.1.26:${port}`);
+  open(`http://192.168.1.26:${port}`);
 });
