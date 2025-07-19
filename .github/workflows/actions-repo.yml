@@ -1,5 +1,5 @@
-name: Notify chanel in Discord And Deploy
-run-name: Notify and Deploy in Railway
+name: Deploy
+run-name: Deploy on Railway
 on:
   push:
     branches:
