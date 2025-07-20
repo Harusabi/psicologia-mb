@@ -8,6 +8,14 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views', 'pages'));
 
+const redirect = (archive) => {
+  app.get("/", (req, res) => {
+    res.redirect(archive);
+  });
+}
+
+module.exports = { redirection };
+
 app.get('/', (req, res) => {
   res.render('index');
 });
@@ -16,7 +24,7 @@ app.get('/contacto', (req, res) => {
   res.render('contact');
 });
 
-app.listen(port, '192.168.1.26', () => {
-  console.log(`Example app listening in http://192.168.1.26:${port}`);
-  open(`http://192.168.1.26:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Example app listening in http://0.0.0.0:${port}`);
+  open(`http://0.0.0.0:${port}`);
 });
