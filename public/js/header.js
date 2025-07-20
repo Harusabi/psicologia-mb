@@ -62,4 +62,8 @@ animationBurger_icon();
 
 menu();
 
+<<<<<<< HEAD
 submenu();
+=======
+submenu();
+>>>>>>> upstream/contact
