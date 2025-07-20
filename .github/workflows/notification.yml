@@ -12,22 +12,10 @@ jobs:
         uses: Ilshidur/action-discord@master
         with:
           args: |
-<<<<<<< HEAD
             📣 Push detectado
             Usuario: {{ EVENT_PAYLOAD.pusher.name }}
             Repositorio: {{ EVENT_PAYLOAD.repository.full_name }}
             Rama: {{ EVENT_PAYLOAD.ref }}
             Ultimo commit: {{ EVENT_PAYLOAD.head_commit.message }}
             Tiempo del commit: {{ EVENT_PAYLOAD.head_commit.timestamp }}
-
-=======
-            ' Push detectado
-              Usuario: {{ EVENT_PAYLOAD.pusher.name }}
-              Repositorio: {{ EVENT_PAYLOAD.repository.full_name }}
-              Rama: {{ EVENT_PAYLOAD.ref }}
-              Ultimo commit: {{ EVENT_PAYLOAD.head_commit.message }}
-              Tiempo del commit: {{ EVENT_PAYLOAD.head_commit.timestamp }}
-
-            '
->>>>>>> upstream/contact
           DISCORD_USERNAME: 'Github BOT'

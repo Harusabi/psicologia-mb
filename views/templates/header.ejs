@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
   <head>
@@ -138,3 +139,119 @@
     <script src="/js/header.js"></script>
   </body>
 </html>
+=======
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+  crossorigin="anonymous" />
+<link rel="stylesheet" href="/css/header.css" />
+
+<nav class="navbar navbar-expand-md navContainer">
+  <div class="container-fluid">
+    <div class="navDiv__imgContainer">
+      <img
+        class="nav__imgLogo"
+        src="images/logoSinPsicologa.jpg"
+        alt="logoWeb" />
+    </div>
+    <button
+      id="navDiv__button-id"
+      class="navbar-toggler navDiv__buttonToggle"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <div class="navbar-toggles-iconButton">
+        <span id="iconButton__one-id" class="iconButton"></span>
+        <span id="iconButton__second-id" class="iconButton"></span>
+        <span id="iconButton__three-id" class="iconButton"></span>
+      </div>
+    </button>
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link nav__ulList" aria-current="page" href="#"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav__ulList disabled" href="#">Conoceme</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle nav__ulList nav__ulList-service"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            data-bs-auto-close="false"
+            aria-expanded="false">
+            Servicios
+          </a>
+          <ul class="dropdown-menu navMenu__detachable">
+            <li>
+              <a
+                class="dropdown-item submenu__acive nav__ulList-sub keep-open"
+                style="cursor: pointer"
+                >Terapias psicologicas
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-right-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+              </a>
+              <ul class="dropdown__submenu">
+                <li class="submenu__li">
+                  <a class="nav-link nav__ulList-sub" href="#"
+                    >¿Necesitas ayuda profesional?</a
+                  >
+                </li>
+                <li class="submenu__li">
+                  <a class="nav-link nav__ulList-sub" href="#">Terapias</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-item nav__ulList-sub" href="#"
+                >Orientacion a estudiantes</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item nav__ulList-sub" href="#"
+                >Asesoria a docentes</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav__ulList disabled" href="#">Para empresas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav__ulList" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar__div d-none d-md-block">
+      <div class="div__navbar">
+        <button class="navbar__divButton">Contactar</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+  crossorigin="anonymous"
+  defer></script>
+<script src="/js/header.js"></script>
+>>>>>>> upstream/HEAD
