@@ -11,10 +11,6 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.get('/contacto', (req, res) => {
-  res.render('contact');
-});
-
 app.listen(port, '0.0.0.0', () => {
   console.log(
     `Example app listening in http://localhost:${port} and http://IP:${port}`

@@ -1,0 +1,16 @@
+.bodyContainer__whatsButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 90vh;
+  left: 80vw;  
+  height: auto;
+}
+
+.bodyContainer__whatsButton > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
