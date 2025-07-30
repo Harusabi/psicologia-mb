@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Example app listening in http://0.0.0.0:${port}`);
-  open(`http://0.0.0.0:${port}`);
+app.listen(port, 'localhost', () => {
+  console.log(`Example app listening in http://localhost:${port}`);
+  open(`http://localhost:${port}`);
 });
