@@ -30,8 +30,5 @@
         }
       }
     }
-  },
-  "file_types": {
-    "HTML": ["ejs"]
   }
 }
