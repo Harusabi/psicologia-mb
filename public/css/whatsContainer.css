@@ -7,8 +7,8 @@
   bottom: clamp(10px, 5vh, 40px);
   right: clamp(10px, 5vw, 40px);
   padding: clamp(8px, 2vw, 16px);
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 200px;
+  max-width: 200px;
   z-index: 1000;
 }
 
@@ -44,7 +44,7 @@
 /* Desing container information */
 
 .whatsButton__divInformation {
-  display: flex;
+  display: none;
   justify-content: end;
   align-items: center;
   width: 100%;
@@ -184,4 +184,34 @@
   color: #f9f1f0;
   font-weight: bold;
   letter-spacing: 2px;
+}
+
+/* Animation container */
+
+.closeContainer__information {
+  animation: closeInformation 0.3s ease-in-out forwards;
+}
+
+@keyframes closeInformation {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(500px);
+  }
+}
+
+.deployContainer__information {
+  animation: openInformation 0.3s ease-in-out forwards;
+}
+
+@keyframes openInformation {
+  from {
+    transform: translateY(500px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
 }
