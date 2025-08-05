@@ -1,0 +1,17 @@
+name: Deploy
+run-name: Deploy on Railway
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: bervProject/railway-deploy@main
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        with:
+          service: 'psicologia-mb'
