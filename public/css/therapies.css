@@ -1,0 +1,401 @@
+:root {
+  --background-generalColor: #48a198;
+  --background-generalColor-light: #63b9b0;
+  --shadows: rgb(99, 185, 176, 0.5);
+  --textColor-titles: #f8efee;
+  --containerArticles-colors: #f6fdfd;
+  --text-colorsHover: rgb(249, 241, 240, 0.5);
+  --button-color: #168076;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefcfc !important;
+}
+
+p {
+  color: #818181;
+}
+
+/* BodyMain section style */
+
+.bodyMain__sectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  gap: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (width < 720px) {
+  .bodyMain__sectionContent {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Article one */
+
+.sectionsPage__therapies {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.therapies__articles {
+  background-color: var(--containerArticles-colors);
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.divContent__sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+}
+
+.divContent__sections > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.divP-article {
+  margin-bottom: 20px;
+}
+
+.divB-article {
+  width: inherit;
+  height: inherit;
+}
+
+.divT-articles {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.divT-articles > span {
+  display: flex;
+  position: absolute;
+  bottom: 13px;
+  justify-content: start;
+  z-index: 1000;
+}
+
+.divT-articles > span > h3:last-child {
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0px 0px 10px var(--shadows);
+  color: var(--background-generalColor-light);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.divT-articles > span > h3:first-child {
+  text-shadow: 0px 0px 10px var(--shadows);
+  padding-right: 20px;
+  color: var(--background-generalColor-light);
+  font-weight: bold;
+  text-shadow: 0px 0px 10px var(--shadows);
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+.backgroundTitle__therapies {
+  background-color: var(--containerArticles-colors);
+  position: absolute;
+  box-shadow: 0px -6px 8px rgb(0, 0, 0, 0.07);
+  bottom: 30px;
+  width: 312px;
+  height: 30px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.article__containerButton {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  width: inherit;
+  height: inherit;
+}
+
+.divVideo__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
+  height: 600px;
+  width: 100%;
+}
+
+.divVideo__content > iframe {
+  border-radius: 10px;
+}
+
+.divVideo__content > div > p {
+  padding: 0px 70px 0px 35px;
+}
+/* Aditional information - locate and schedule */
+
+.sectionInformation__divAditional {
+  margin-bottom: 20px;
+}
+
+.divAditional__information {
+  display: flex;
+  padding: 20px 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.information__content-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.content__title > div:last-child {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+
+.content__title > div:last-child > h4 {
+  color: var(--background-generalColor-light);
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+
+.content__title > div:last-child > h4:first-child {
+  color: var(--background-generalColor-light);
+  margin-right: 5px;
+}
+
+.content__title > div:last-child > h4:last-child {
+  color: #818181;
+}
+
+.content__title > div:first-child {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.content__paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* List benefits */
+
+.divList__benefit {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.benefit__contentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+}
+
+.informationBenefit__div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.informationBenefit__div > div {
+  display: block;
+  justify-items: center;
+  align-items: center;
+}
+
+.informationBenefit__div > div > ul {
+  margin: 0px;
+  padding: 10px;
+}
+
+.informationBenefit__div > div > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.informationBenefit__div > div > ul > li > span:last-child {
+  color: #818181;
+}
+
+@media (width <= 1000px) {
+  .article {
+    flex-direction: column;
+    width: 700px;
+    gap: 0;
+  }
+
+  .informationBenefit__div {
+    justify-content: center;
+  }
+
+  .divT-articles > div {
+    left: 24%;
+  }
+
+  .divT-articles > span {
+    left: 24%;
+  }
+
+  .divP-article > p {
+    text-align: center;
+  }
+
+  .divContent__div {
+    justify-content: center;
+    align-items: center;
+  }
+  .article__containerButton {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divContent-article {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .divVideo__content {
+    height: auto;
+  }
+
+  .divVideo__content > iframe {
+    width: 700px;
+    height: 350px;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  @media (width <= 800px) {
+    .article {
+      width: 500px;
+    }
+
+    .divT-articles > div {
+      left: 13%;
+    }
+
+    .divT-articles > span {
+      left: 15%;
+    }
+
+    @media (width <= 600px) {
+      .article {
+        width: 300px;
+      }
+
+      .divContent__sections {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+      }
+
+      .divContent-article {
+        padding-bottom: 20px;
+        width: 300px;
+        height: 150px;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .divT-articles {
+        position: initial;
+        justify-content: center;
+      }
+
+      .backgroundTitle__therapies {
+        display: none;
+      }
+
+      .divT-articles > span {
+        display: flex;
+        position: initial;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+      }
+
+      .divT-articles > span > h3:first-child {
+        padding: 0;
+        color: var(--background-generalColor-light);
+      }
+
+      .divT-articles > span > h3:last-child {
+        text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+        color: #fcfcfc;
+      }
+
+      .divT-articles > span > h3:first-child {
+        border-left: none;
+        padding-left: 0px;
+      }
+
+      .divVideo__content > iframe {
+        width: 300px;
+        height: 200px;
+      }
+
+      .article__containerButton {
+        justify-content: center;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}

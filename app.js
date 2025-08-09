@@ -15,7 +15,10 @@ app.get('/contacto', (req, res) => {
   res.render('contact');
 });
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Example app listening in http://0.0.0.0:${port}`);
-  open(`http://0.0.0.0:${port}`);
+app.get('/terapias', (req, res) => {
+  res.render('therapies');
+});
+
+app.listen(port, '192.168.1.36', () => {
+  console.log(`Example app listening in http://192.168.1.36:${port}`);
 });
