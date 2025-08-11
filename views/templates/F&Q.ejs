@@ -1,0 +1,45 @@
+<head>
+  <link rel="stylesheet" href="/css/F&Q.css" />
+</head>
+
+<div class="divContent__divsTwo-eight">
+  <div
+    class="divsOne__listQuestions-eight animationBackground__containerQuestions">
+    <div class="listQuestions__divContent-eight">
+      <% if(option) {%>
+      <div class="divContent__aditionalInformation-eight">
+        <div class="aditionalInformation-eight">
+          <h3>Preguntas <span>frecuentes</span></h3>
+        </div>
+        <div class="aditionalInformation-eight">
+          <p><%- typeof content !== 'undefined' ? content : ''%></p>
+        </div>
+        <div class="aditionalInformation-eight">
+          <button class="navbar__divButton">Contactanos</button>
+        </div>
+      </div>
+      <% } %>
+      <ul class="listQuestions__ul-eight">
+        <% questions.forEach(({ q, a }) => { %>
+        <li class="ul__li-eight">
+          <div class="li__questionsAndBurgures-eight">
+            <div>
+              <span><%= q %></span>
+            </div>
+            <div class="ulContent__divSpan-eight">
+              <span class="divSpan__shapeOne"></span>
+              <span class="divSpan__shapeTwo"></span>
+              <span class="divSpan__shapeThree"></span>
+            </div>
+          </div>
+          <div class="divResponse__paragraph-eight">
+            <p><%= a %></p>
+          </div>
+        </li>
+        <% }) %>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="/js/F&Q.js" defer></script>

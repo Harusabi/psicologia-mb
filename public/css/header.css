@@ -23,7 +23,34 @@ button {
 }
 
 .navContainer {
+  width: 100%;
   background-color: var(--background-colorHeader);
+}
+
+.shadowAnimation {
+  animation: showShadow__background 0.3s ease 1s forwards;
+}
+
+.fadeShadow__animation {
+  animation: fadeShadow__background 0.3s ease forwards;
+}
+
+@keyframes showShadow__background {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0px 2px 20px rgb(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes fadeShadow__background {
+  from {
+    box-shadow: 0px 2px 20px rgb(0, 0, 0, 0.2);
+  }
+  to {
+    box-shadow: none;
+  }
 }
 
 .navDiv__imgContainer {
@@ -235,20 +262,19 @@ button {
   align-items: center;
 }
 .navbar__divButton {
-  text-align: center;
-  background-color: var(--button-color);
-  border-radius: 10px;
-  padding: 7px 10px;
-  opacity: 0.5;
-  color: #f9f1f0;
-  font-weight: bold;
-  letter-spacing: 2px;
-  transition: all 0.3s ease-in-out;
+  background: linear-gradient(135deg, #7dd3c0, #4a9b8a);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .navbar__divButton:hover {
-  box-shadow: 0px 0px 10px var(--shadows);
-  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(125, 211, 192, 0.3);
 }
 
 .navbar__divButton:active {

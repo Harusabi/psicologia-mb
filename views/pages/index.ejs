@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Terapias | MB</title>
+    <title>Psicologa | MB</title>
     <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/whatsContainer.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Great+Vibes&display=swap"
       rel="stylesheet" />
@@ -12,7 +13,7 @@
   <body class="bodyContainer">
     <div
       id="carouselExampleSlidesOnly"
-      class="carousel slide .bodyDiv__carrusel"
+      class="d-none d-md-block carousel slide .bodyDiv__carrusel"
       data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -35,17 +36,6 @@
         </div>
       </div>
     </div>
-    <!--<div class="container" style="
-    ">
-     <div class="servicios-barrido-js">
-        <div class="img-container">
-          <img src="/images/logo-2.jpg" alt="" />
-        </div>
-        <h1>Milagros bolanos</h1>
-        <span class="Animate-text">Click Emocional</span>
-      </div>
-    </div>
-  -->
 
     <%- include("../templates/header") %>
 
@@ -120,7 +110,7 @@
             <span><h2>"Objetivo"</h2></span>
           </div>
           <div class="divsContent__div-two">
-            <img src="/images/logonuevo-sinfondo.png" alt="logotipoMilagro" />
+            <img src="/images/logonuevo-sinfondo.webp" alt="logotipoMilagro" />
           </div>
         </div>
       </section>
@@ -218,7 +208,7 @@
               <div>
                 <div>
                   <img
-                    src="/images/logonuevo-sinfondo_noPsicologa.png"
+                    src="/images/logonuevo-sinfondo_noPsicologa.webp"
                     alt="Imagen de capacitacion" />
                 </div>
               </div>
@@ -242,7 +232,7 @@
               <div>
                 <div>
                   <img
-                    src="/images/logonuevo-sinfondo_noPsicologa.png"
+                    src="/images/logonuevo-sinfondo_noPsicologa.webp"
                     alt="Imagen de terapia" />
                 </div>
               </div>
@@ -266,7 +256,7 @@
               <div>
                 <div>
                   <img
-                    src="/images/logonuevo-sinfondo_noPsicologa.png"
+                    src="/images/logonuevo-sinfondo_noPsicologa.webp"
                     alt="Imagen de orientacion" />
                 </div>
               </div>
@@ -400,9 +390,8 @@
       </section>
     </main>
     <%- include("../templates/footer") %>
-    <!--
     <%- include("../templates/whatsContainer") %>
-    -->
+    
     <script src="/js/index.js"></script>
   </body>
 </html>
