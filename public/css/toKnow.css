@@ -1,0 +1,302 @@
+:root {
+  --background-generalColor: #48a198;
+  --background-generalColor-light: #63b9b0;
+  --shadows: rgb(99, 185, 176, 0.5);
+  --textColor-titles: #f8efee;
+  --containerArticles-colors: #f6fdfd;
+  --text-colorsHover: rgb(249, 241, 240, 0.5);
+  --button-color: #168076;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fefcfc !important;
+}
+
+p {
+  color: #818181;
+}
+
+.mainContainer__contentSections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15em;
+  margin-left: 5em;
+  margin-right: 5em;
+  gap: 1em;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (width < 720px) {
+  .mainContainer__contentSections {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.contentSections__section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Section one */
+
+.sectionOne__divContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: animationContainer_image 2s ease infinite alternate 1s;
+}
+
+@keyframes animationContainer_image {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.sectionOne__divContent > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('/images/fotoMilagro.png');
+}
+
+.divContent__imageExperience {
+  display: flex;
+  position: relative;
+  top: 45%;
+  left: 30%;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 110px;
+  background-color: var(--containerArticles-colors);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.divContent__imageExperience > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-right: 1px solid var(--background-generalColor-light);
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.divContent__imageExperience > div:first-child > span {
+  display: flex;
+  text-align: end;
+  justify-content: end;
+  align-items: center;
+  font-size: large;
+  font-weight: 600;
+  color: #818181;
+  letter-spacing: 1.1px;
+  width: 100%;
+}
+
+.divContent__imageExperience > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  padding: 20px 10px 20px 10px;
+}
+
+.divContent__imageExperience > div:last-child > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #7dd3c0, #4a9b8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1.1px;
+  width: 100%;
+}
+
+.sectionOne__articleContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sectionOne__articleContent > div:first-child {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  gap: 5px;
+}
+
+.sectionOne__articleContent > div:first-child > span {
+  color: #818181;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.sectionOne__articleContent > div:first-child > span:last-child {
+  background: linear-gradient(135deg, #7dd3c0, #4a9b8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sectionOne__articleContent > div:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  margin-bottom: 20px;
+}
+
+.sectionOne__articleContent > div:nth-child(2) {
+    color: #818181;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.sectionOne__articleContent > div:nth-child(3) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: inherit;
+  height: inherit;
+  margin-bottom: 20px;
+}
+
+.sectionOne__articleContent > div:nth-child(3) > p {
+  text-align: end;
+}
+
+.articleContent__divSignature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.articleContent__divSignature > div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+.articleContent__divSignature > div:first-child > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    padding-left: 70px;
+    margin-right: 40px;
+}
+
+.articleContent__divSignature > div:first-child > div:last-child > div > span {
+    color: #818181;
+    font-weight: 500;
+}
+
+.articleContent__divSignature > div:first-child > div:last-child > div:last-child > span {
+    color: var(--background-generalColor-light);
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.articleContent__divSignature > div:first-child > div:first-child {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.lineTop__divide {
+    width: 200px;
+    height: 1px;
+    background-color: var(--background-generalColor-light);
+    margin-bottom: 10px;
+}
+
+.articleContent__divSignature > div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+}
+
+.articleContent__divSignature > div:last-child > div:last-child {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100px;
+    overflow: hidden;
+}
+
+.articleContent__divSignature > div:last-child > div:last-child::before {
+    content: '';
+    display: block;
+    height: 100px;
+    width: 1px;
+    background-color: var(--background-generalColor-light);
+}
+
+.articleContent__divSignature > div:last-child > div:last-child > img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.lineTop__divideImage {
+    margin: 0;
+}
+
+/* Section two */
+
+.contentSections__section-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}

@@ -19,6 +19,10 @@ app.get('/terapias', (req, res) => {
   res.render('therapies');
 });
 
+app.get('/conoceme', (req, res) => {
+  res.render('toKnow');
+});
+
 app.listen(port, '192.168.1.19', () => {
   console.log(`Example app listening in http://192.168.1.19:${port}`);
 });

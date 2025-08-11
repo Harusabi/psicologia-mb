@@ -1,3 +1,4 @@
+const { ref } = require('process');
 
 const deployResponse = () => {
   const preguntas = document.querySelectorAll(
@@ -75,6 +76,24 @@ const animationBurger_inicio = () => {
     });
 };
 
+const redirectButton = () => {
+  const buttonRedirect = document.querySelectorAll('.navbar__divButton');
+
+  buttonRedirect.forEach((button) => {
+    button.addEventListener('click', () => {
+      const tipo = button.dataset.typeB?.trim();
+      const href = button.dataset.href?.trim();
+
+      if (!href) return;
+
+      if (tipo === 'sobre_mi') {
+        window.location.href = href;
+      }
+    });
+  });
+};
+
+document.addEventListener('DOMContentLoaded', redirectButton);
 animationBurger_inicio();
 
 deployResponse();

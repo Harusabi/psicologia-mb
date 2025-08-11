@@ -91,9 +91,15 @@ a {
 
 .contactUs__div > div:last-child {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: inherit;
+}
+
+@media (width <= 768px) {
+    .contactUs__div > div:last-child {
+        justify-content: center;
+    }
 }
 
 .contactUs__div > div:last-child  > button {
