@@ -1,0 +1,223 @@
+/* --respuestas */
+
+.divContent__divsTwo-eight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px 9px 25px 9px;
+  width: 100%;
+  height: 100%;
+}
+
+.divsOne__listQuestions-eight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+}
+
+.divContent__aditionalInformation-eight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.divContent__aditionalInformation-eight > div:first-child > h3 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  width: inherit;
+  color: #818181;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+
+.divContent__aditionalInformation-eight > div:first-child > h3 > span {
+  background: linear-gradient(135deg, #7dd3c0, #4a9b8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.aditionalInformation-eight {
+  display: flex;
+  justify-content: start;
+  width: inherit;
+}
+
+.listQuestions__ul-eight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: inherit;
+  height: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+.listQuestions__divContent-eight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 25px 9px 25px 9px;
+  background-color: rgb(246, 253, 253, 0.9);
+}
+
+@media (width <= 768px) {
+  .listQuestions__divContent-eight {
+    flex-direction: column;
+  }
+
+  .aditionalInformation-eight {
+    justify-content: center;
+  }
+}
+
+.ul__li-eight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid var(--containerArticles-colors);
+  padding: 10px;
+}
+
+.ul__li-eight > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.ul__li-eight > div:first-child > div:first-child > span {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #777777;
+  transition: all 0.3s ease-in-out;
+}
+
+.ul__li-eight > div:first-child:hover > div:first-child > span {
+  color: var(--background-generalColor-light);
+}
+
+.ul__li-eight > div:last-child {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  overflow: hidden;
+}
+
+.ul__li-eight > div:last-child > p {
+  margin: 0px;
+  padding: 10px;
+}
+
+/* --desplegar menu */
+
+.deployInformation {
+  animation: animationDeploy-information 0.3s ease-in-out forwards;
+}
+
+@keyframes animationDeploy-information {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 100px;
+  }
+}
+
+.closeInformation {
+  animation: animationClose-information 0.3s ease-in-out forwards;
+}
+
+@keyframes animationClose-information {
+  from {
+    height: 100px;
+  }
+
+  to {
+    height: 0px;
+  }
+}
+
+/* Burguer icon */
+
+.ulContent__divSpan-eight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  gap: 2px;
+}
+
+.divSpan__shapeOne {
+  display: block;
+  height: 3px;
+  width: 17px;
+  border-radius: 10px;
+  background-color: var(--background-generalColor-light);
+}
+
+.divSpan__shapeTwo {
+  display: block;
+  height: 3px;
+  width: 17px;
+  border-radius: 10px;
+  background-color: var(--background-generalColor-light);
+}
+
+.divSpan__shapeThree {
+  display: block;
+  height: 3px;
+  width: 17px;
+  border-radius: 10px;
+  background-color: var(--background-generalColor-light);
+}
+
+/* Background animation container */
+
+.animationBackground__containerQuestions {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px 9px 25px 9px;
+  animation: animationBackground 14s infinite alternate;
+}
+
+@keyframes animationBackground {
+  0% {
+    background-image: url('/images/milagroPhoto.jpg');
+  }
+
+  50% {
+    background-image: url('/images/fondo_1-f&q.png');
+  }
+
+  100% {
+    background-image: url('/images/fondo_2-f&q.png');
+  }
+}

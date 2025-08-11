@@ -14,6 +14,7 @@
 
 .bodyFooter {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10em;
@@ -362,5 +363,39 @@
       flex-direction: column;
       margin-top: 30px;
     }
+  }
+}
+
+/* Section two */
+
+.bodyFooter__containerSection-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.containerSection__divInfo-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-top: 1px solid #16807591;
+}
+
+.containerSection__divInfo-two > span {
+  padding: 30px;
+  color: #fefcfc;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  cursor: none;
+  text-align: center;
+}
+
+@media (width < 900px) {
+  .containerSection__divInfo-two {
+    border: none;
   }
 }

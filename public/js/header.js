@@ -58,6 +58,47 @@ const submenu = () => {
   });
 };
 
+const scrollMin = () => {
+  const header = document.querySelector('.navbar');
+  const isMobile = window.innerWidth <= 768;
+  const rutaActual = window.location.pathname.split('/').pop();
+
+  if (isMobile) {
+    header.style.position = 'fixed';
+    header.style.zIndex = '1000';
+    header.style.top = '0';
+
+    return;
+  }
+
+  header.style.position = '';
+
+  if (rutaActual == '') {
+    header.style.position = '';
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 600) {
+        header.style.position = 'fixed';
+        header.style.zIndex = '1000';
+        header.style.top = '0';
+        header.classList.remove('fadeShadow__animation');
+        header.classList.add('shadowAnimation');
+        return;
+      }
+      header.style.position = '';
+      header.classList.remove('shadowAnimation');
+      header.classList.add('fadeShadow__animation');
+    });
+  } else {
+    header.style.position = 'fixed';
+    header.style.zIndex = '1000';
+    header.style.top = '0';
+    header.classList.remove('fadeShadow__animation');
+    header.classList.add('shadowAnimation');
+  }
+};
+
+scrollMin();
+
 animationBurger_icon();
 
 menu();
