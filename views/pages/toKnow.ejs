@@ -61,6 +61,16 @@
       <section class="contentSections__section-two">
         <%- include('../templates/directContact')%>
       </section>
+      <section class="contentSections__section-three">
+        <%- include('../templates/F&Q.ejs', {
+          option: true,
+          content: 'Lorem ipsu dolor...',
+          questions: [{q: 'Pregunta 1', a: 'Lorem ipsu dolor...'},
+          {q: 'Pregunta 2', a: 'Lorem ipsu dolor...'},
+          {q: 'Pregunta 3', a: 'Lorem ipsu dolor...'},
+          {q: 'Pregunta 4', a: 'Lorem ipsu dolor...'}]
+        })%>
+      </section>
     </main>
 
     <%- include('../templates/footer')%>

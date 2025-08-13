@@ -23,6 +23,6 @@ app.get('/conoceme', (req, res) => {
   res.render('toKnow');
 });
 
-app.listen(port, '192.168.1.19', () => {
-  console.log(`Example app listening in http://192.168.1.19:${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Example app listening in http://0.0.0.0:${port}`);
 });

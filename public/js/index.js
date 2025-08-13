@@ -1,5 +1,3 @@
-const { ref } = require('process');
-
 const deployResponse = () => {
   const preguntas = document.querySelectorAll(
     '.li__questionsAndBurgures-eight'
@@ -77,23 +75,27 @@ const animationBurger_inicio = () => {
 };
 
 const redirectButton = () => {
-  const buttonRedirect = document.querySelectorAll('.navbar__divButton');
+  const buttonRedirect = Array.from(document.querySelectorAll('.navbar__divButton'));
 
   buttonRedirect.forEach((button) => {
     button.addEventListener('click', () => {
-      const tipo = button.dataset.typeB?.trim();
-      const href = button.dataset.href?.trim();
+      const tipo = button.dataset.type;
+      const href = button.dataset.href;
 
-      if (!href) return;
+      console.log(tipo, ' ', href);
+      if (!href) {
+        return
+      }
 
-      if (tipo === 'sobre_mi') {
+      if (tipo === 'sobre mi') {
         window.location.href = href;
       }
     });
   });
 };
 
-document.addEventListener('DOMContentLoaded', redirectButton);
+redirectButton();
+
 animationBurger_inicio();
 
 deployResponse();
