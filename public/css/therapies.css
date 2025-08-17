@@ -391,6 +391,7 @@ p {
       }
 
       .divContent-article {
+        position: relative;
         padding-bottom: 20px;
         width: 300px;
         height: 150px;
@@ -781,7 +782,7 @@ p {
   border-radius: 0px 10px 10px 0px;
   width: 10px;
   height: 3px;
-  background-color:var(--background-generalColor-light);
+  background-color: var(--background-generalColor-light);
   margin-right: 10px;
   vertical-align: middle;
 }

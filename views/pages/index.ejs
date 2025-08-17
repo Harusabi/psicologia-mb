@@ -107,6 +107,18 @@
 
       <section class="bodyMain__sectionArticles article-four">
         <article class="sectionArticles__divContent divContent-four">
+          <%- include('../templates/aditionalInformation', {
+            idParameter: 1,
+            moreInformation: false,
+            optionBenefit: false,
+            information: [
+            {
+              titleOne: "Psicologia",
+            titleTwo: "online",
+            paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit soluta similique, eaque quasi earum ab autem ut iste in quis ea doloribus, temporibus nemo, animi beata voluptatum et odit?F"
+            }
+            ]
+          })%>
           <div class="divContent__divFour">
             <div class="divT-articleFour">
               <span
@@ -161,6 +173,18 @@
           </iframe>
         </div>
         <article class="sectionArticles__divContent divContent-five">
+          <%- include('../templates/aditionalInformation', {
+            idParameter: 0,
+            moreInformation: false,
+            optionBenefit: false,
+            information: [
+            {
+              titleOne: "Psicologia",
+            titleTwo: "presencial",
+            paragraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sit soluta similique, eaque quasi earum ab autem ut iste in quis ea doloribus, temporibus nemo, animi beata voluptatum et odit?F"
+            }
+            ]
+          })%>
           <div class="divContent__divFive">
             <div class="divT-articleFive">
               <span

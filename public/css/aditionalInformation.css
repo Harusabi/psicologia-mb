@@ -1,0 +1,64 @@
+.divInformation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: rotate(20deg);
+  bottom: 76%;
+  left: 90%;
+}
+
+@media (width > 600px) {
+  .divInformation {
+    display: none;
+  }
+}
+
+.contentButton__svg {
+  background: linear-gradient(135deg, #7dd3c0, #4a9b8a);
+  border-radius: 5px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contentButton__svg:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 30px var(--shadows);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animation {
+    animation: animationExclamation 0.3s ease-in-out infinite;
+    transform-origin: center bottom;
+    will-change: transform;
+  }
+
+  @keyframes animationExclamation {
+    0% {
+      transform: rotate(0) scale(1.1);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(0);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+}
+
+.modal-title > span {
+  color: #818181;
+  letter-spacing: 1.1px;
+  font-weight: bold;
+}
+
+.modal-title > span:last-child {
+  color: var(--background-generalColor-light);
+  margin-left: 5px;
+}
