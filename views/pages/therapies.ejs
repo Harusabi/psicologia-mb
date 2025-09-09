@@ -12,6 +12,22 @@
     <main class="bodyMain__sectionContent">
       <section class="sectionsPage__therapies article">
         <article class="therapies__articles divContent-article">
+          <%- include('../templates/aditionalInformation', {
+      moreInformation: true,
+      optionBenefit: true,
+      idParameter: 0,
+      information: 
+      [ {
+        titleOne: "Psicoterapia",
+        titleTwo: "online",
+        paragraph: "Lorem ipsu dolor...",
+        titleUbication_one: "100%",
+        titleUbication_two: "virtual",
+        paragraphUbication: "Lorem ipsu dolor...",
+        paragraphSchedule: "Lorem ipsu dolor..."
+      } ],
+      benefits: [ { b: "Primer beneficio" } ]
+    })%>
           <div class="divContent__sections">
             <div class="divT-articles">
               <span
@@ -247,6 +263,22 @@
         </div>
         <article
           class="therapies__articles divContent-article therapiesArticle__sectionTwo">
+          <%- include('../templates/aditionalInformation', {
+      moreInformation: true,
+      optionBenefit: true,
+      idParameter: 1,
+      information: 
+      [ {
+        titleOne: "Psicologia",
+        titleTwo: "presencial",
+        paragraph: "Lorem ipsu dolor lorem...",
+        titleUbication_one: "Encuentranos",
+        titleUbication_two: "aqui",
+        paragraphUbication: "Lorem ipsu dolor lorem...",
+        paragraphSchedule: "Lorem ipsu dolor lorem..."
+      } ],
+      benefits: [ { b: "Primer beneficio" } ]
+    })%>
           <div
             class="divContent__sections contentSection__sectionTwo-therapies">
             <div class="divT-articles divT__sectionTwo-therapies">
@@ -520,14 +552,14 @@
       <section class="sectionContent__section-six">
         <%- include('../templates/F&Q', {
           option: true,
-          content: 'lorem ipsu dolor...',
+          content: "lorem ipsu dolor...",
           questions: [
           {q: "Pregunta 1", a: "Lorem ipsu dolor..."},
           {q: "Pregunta 2", a: "Lorem ipsu dolor..."},
           {q: "Pregunta 3", a: "Lorem ipsu dolor..."},
           {q: "Pregunta 4", a: "Lorem ipsu dolor..."}
           ]
-        }) %>
+        })%>
       </section>
     </main>
 

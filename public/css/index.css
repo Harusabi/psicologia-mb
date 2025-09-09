@@ -79,6 +79,7 @@ p {
 }
 
 .sectionArticles__divContent {
+  position: relative;
   background-color: var(--containerArticles-colors);
   box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.1);
   padding: 30px;
