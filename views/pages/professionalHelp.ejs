@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Necesito ayuda?</title>
+  <link rel="stylesheet" href="/css/professionalHelp.css">
+</head>
+
+<body class="bodyContainer">
+  <%- include("../templates/header") %>
+
+  <main class="mainContainer">
+    <section class="mainContainer__sectionOne">
+      <div>
+        <h1 class="divOne__titlePresentation">Debo de ir al psicologo?</h1>
+      </div>
+    </section>
+    <section class="mainContainer__sectionTwo">
+      <%- include('../templates/containerElements', {
+      oneTitle: 'Como saber si requieres de',
+      validation_secondTitle: true,
+      twoTitle: 'ayuda profesional',
+      paragraphInformation: 'Lee detenidamente y reflexiona sobre aquello con lo que te sientes identificado. Si es el caso, recuerda que podemos ayudarte',
+      validation_contentList: true,
+      contentList: [ {
+        l: 'lorem ipsu dolor...'
+      }, { l: 'lorem ipsu dolor...' }, { l: 'lorem ipsu dolor...' } ],
+      validation__containButtom: true,
+      redirectPage: 'contacto',
+      textButton: 'Contactar ahora'
+    })%>
+      <div class="sectionTwo__containerImage-two">
+        <div class="containerImage">
+        </div>
+      </div>
+    </section>
+
+    <section class="mainContainer__sectionThree">
+      <%- include('../templates/containerElements.ejs', {
+        oneTitle: 'Debes de',
+      validation_secondTitle: true,
+      twoTitle: 'tener en cuenta',
+      paragraphInformation: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, voluptatem temporibus. Alias reprehenderit sunt consectetur ipsum quia. Incidunt ex assumenda reiciendis, itaque quisquam, quia dicta dolor deserunt magnam odit iusto!',
+      validation_contentList: false,
+      validation__containButtom: false,
+      }) %>
+    </section>
+
+    <section class="mainContainer__sectionFour">
+      <%- include('../templates/directContact.ejs') %>
+    </section>
+  </main>
+
+  <div class="heartImage">
+  </div>
+
+  <%- include("../templates/footer") %>
+  <%- include("../templates/whatsContainer") %>
+
+  <script src="/js/professionalHelp.js" defer></script>
+</body>
+
+</html>

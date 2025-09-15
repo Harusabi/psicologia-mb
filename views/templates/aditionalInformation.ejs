@@ -3,102 +3,102 @@
 </head>
 
 <% information.map((value) => { %>
-  <% const modalId = moreInformation ? `divButton-therapies-${idParameter}` : `divButton-empty-${idParameter}`; %>
+<% const modalId = moreInformation ? `divButton-therapies-${idParameter}` : `divButton-empty-${idParameter}`; %>
 
-  <div class="divInformation">
-    <div class="divInformation__contentButton">
-      <button data-bs-target="#<%= modalId %>" class="contentButton__svg" data-bs-toggle="modal">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-exclamation" viewBox="0 0 16 16">
-          <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.553.553 0 0 1-1.1 0z" />
-        </svg>
-      </button>
-    </div>
+<div class="divInformation">
+  <div class="divInformation__contentButton">
+    <button data-bs-target="#<%= modalId %>" class="contentButton__svg" data-bs-toggle="modal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-exclamation" viewBox="0 0 16 16">
+        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.553.553 0 0 1-1.1 0z" />
+      </svg>
+    </button>
   </div>
+</div>
 
-  <div class="modal fade" id="<%= modalId %>" tabindex="-1" aria-labelledby="modalScrollLabel-<%= idParameter%>" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalScrollLabel-<%= idParameter%>">
-            <span><%- value.titleOne %></span>
-            <span><%- value.titleTwo %></span>
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+<div class="modal fade" id="<%= modalId %>" tabindex="-1" aria-labelledby="modalScrollLabel-<%= idParameter%>" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalScrollLabel-<%= idParameter%>">
+          <span><%- value.titleOne %></span>
+          <span><%- value.titleTwo %></span>
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><%- value.paragraph %></p>
+
+        <% if (optionBenefit) { %>
+        <div class="divList__benefit mt-3 mb-3">
+          <div class="benefit__contentDiv">
+            <div class="informationBenefit__div">
+              <ul>
+                <% benefits.forEach(({ b }) => { %>
+                <li>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#48a198" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                      <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
+                      <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
+                    </svg>
+                  </span>
+                  <span><%- b %></span>
+                </li>
+                <% }) %>
+              </ul>
+            </div>
+          </div>
         </div>
+        <% } %>
 
-        <div class="modal-body">
-          <p><%- value.paragraph %></p>
+        <% if (moreInformation) { %>
+        <div class="sectionInformation__divAditional mb-3">
+          <div class="d-flex flex-column divAditional__information">
+            <div class="information__content-one">
+              <div class="content__title">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#48a198" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                  </svg>
+                </div>
+                <div>
+                  <h4><%- value.titleUbication_one %></h4>
+                  <h4><%- value.titleUbication_two %></h4>
+                </div>
+              </div>
+              <div class="content__paragraph">
+                <p><%- value.paragraphUbication %></p>
+              </div>
+            </div>
 
-          <% if (optionBenefit) { %>
-          <div class="divList__benefit mt-3 mb-3">
-            <div class="benefit__contentDiv">
-              <div class="informationBenefit__div">
-                <ul>
-                  <% benefits.forEach(({ b }) => { %>
-                  <li>
-                    <span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#48a198" class="bi bi-check2-circle" viewBox="0 0 16 16">
-                        <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0" />
-                        <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
-                      </svg>
-                    </span>
-                    <span><%- b %></span>
-                  </li>
-                  <% }) %>
-                </ul>
+            <div class="information__content-one">
+              <div class="content__title">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#48a198" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                  </svg>
+                </div>
+                <div>
+                  <h4>Horario</h4>
+                </div>
+              </div>
+              <div class="content__paragraph">
+                <p><%- value.paragraphSchedule %></p>
               </div>
             </div>
           </div>
-          <% } %>
+        </div>
+        <% } %>
 
-          <% if (moreInformation) { %>
-          <div class="sectionInformation__divAditional mb-3">
-            <div class="d-flex flex-column divAditional__information">
-              <div class="information__content-one">
-                <div class="content__title">
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#48a198" class="bi bi-geo-alt" viewBox="0 0 16 16">
-                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4><%- value.titleUbication_one %></h4>
-                    <h4><%- value.titleUbication_two %></h4>
-                  </div>
-                </div>
-                <div class="content__paragraph">
-                  <p><%- value.paragraphUbication %></p>
-                </div>
-              </div>
-
-              <div class="information__content-one">
-                <div class="content__title">
-                  <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#48a198" class="bi bi-clock" viewBox="0 0 16 16">
-                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
-                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4>Horario</h4>
-                  </div>
-                </div>
-                <div class="content__paragraph">
-                  <p><%- value.paragraphSchedule %></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <% } %>
-
-          <div class="d-flex justify-content-center p-3">
-            <button class="navbar__divButton">Contactar</button>
-          </div>
+        <div class="d-flex justify-content-center p-3">
+          <button class="navbar__divButton">Contactar</button>
         </div>
       </div>
     </div>
   </div>
+</div>
 <% }) %>
 
 <script src="/js/aditionalInformation.js" defer></script>
