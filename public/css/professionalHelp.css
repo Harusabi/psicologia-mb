@@ -145,7 +145,7 @@ p {
 /* Ornamental element */
 
 .heartImage {
-    position: absolute;
+    position: fixed;
     transform: rotate(-100deg);
     opacity: .2;
     background-image: url('/images/Corazon.png');
