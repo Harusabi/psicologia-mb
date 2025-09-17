@@ -27,6 +27,14 @@ app.get('/ayuda', (req, res) => {
   res.render('professionalHelp');
 });
 
+app.get('/asesoria&estudiantes', (req, res) => {
+  res.render('educative');
+});
+
+app.get('/psicologia&laboral', (req, res) => {
+  res.render('labor');
+});
+
 app.use((req, res) => {
   res.status(404).render('404');
 });

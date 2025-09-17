@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesoria estudiantes</title>
+  <link rel="stylesheet" href="/css/educative.css">
+</head>
+
+<body class="bodyContainer">
+  <%- include('../templates/header') %>
+
+  <main class="mainContainer">
+
+    <section class="mainContainer__sectionContent-one sectionTitle__parentContain">
+      <div class="sectionContent__titleContainer-one titleContain">
+        <h1 class="titleContainer-one">Psicologia educativa a tu alcance</h1>
+      </div>
+    </section>
+
+    <section class="mainContainer__sectionContent-two">
+      <article class="sectionContent__articleContains-two">
+        <div class="articleContains__divOne-two">
+          <h3>Objetivo y motivacion</h3>
+        </div>
+        <div class="articleContains__divOne-two">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, mollitia maiores ad est illo, sunt inventore voluptate quae labore quo eos laborum harum ratione aut nesciunt? Sunt, aspernatur? Vel, vitae.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="mainContainer__sectionContent-three sectionTitle__parentContain">
+      <div class="sectionContent__divContain-three titleContain">
+        <h2>Orientacion a estudiantes</h2>
+      </div>
+    </section>
+
+    <section class="mainContainer__sectionContent-four">
+      <article class="sectionContent__articleContains-four">
+        <div class="articleContains__divOne-four">
+          <div>
+            <h3>Acompañamiento</h3>
+          </div>
+          <div>
+            <p>
+              Ha raiz del estres que puede generar este mundo tan extenso que es la <strong>psicologia</strong>. Se tiene un
+              perfecto plan de orientacion para aquellos estudiantes que necesitan ser orientados en su etapa lectiva.
+            </p>
+          </div>
+          <div>
+            <button class="navbar__divButton">Me interesa</button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+
+            <%- include('../templates/F&Q', {
+          option: false,
+          questions: [
+          {q: "Mejora de rendimiento academico", a: "Lorem ipsu dolor..."},
+          {q: "Respuestas a dudas", a: "Lorem ipsu dolor..."},
+          {q: "Mejora de habilidades", a: "Lorem ipsu dolor..."}
+          ]
+        })%>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="mainContainer__sectionContent-five">
+      <div class="titleContain">
+        <h2>Asesoramiento a docentes</h2>
+      </div>
+    </section>
+
+    <section class="mainContainer__sectionContent-six">
+      <article class="sectionContent__articleContains-six">
+        <div class="articleContains__divContent__one-six">
+          <div>
+            <%- include('../templates/containerElements.ejs', {
+            oneTitle: 'Como puedo',
+      validation_secondTitle: true,
+      twoTitle: 'ayudarte?',
+      paragraphInformation: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, mollitia maiores ad est illo, sunt inventore voluptate quae labore quo eos laborum harum ratione aut nesciunt? Sunt, aspernatur? Vel, vitae.',
+      validation_contentList: false,
+      validation__containButtom: false,
+          }) %>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div class="articleContains__divContent__two-six">
+          <div>
+            <div>
+              <h3>Y por que?</h3>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nobis dicta nostrum ad, accusantium dolore reprehenderit aliquam aperiam, doloremque hic, minima ipsum ex eaque quis enim minus provident. Harum, molestias?
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="mainContainer__sectionContent-seven">
+      <%- include('../templates/F&Q', {
+              option: false,
+              questions: [
+            {q: "Como saber si esta mentoria es para mi?", a: "Lorem ipsu dolor..."},
+            {q: "Como vamos a empezar a trabajar?", a: "Lorem ipsu dolor..."}
+            ]
+          })%>
+    </section>
+
+    <section class="mainContainer__sectionContent-eight">
+      <%- include('../templates/directContact.ejs') %>
+    </section>
+  </main>
+
+  <%- include('../templates/footer') %>
+  <%- include('../templates/whatsContainer') %>
+
+  <script src="/js/educative.js" defer></script>
+</body>
+
+</html>
