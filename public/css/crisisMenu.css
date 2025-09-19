@@ -1,0 +1,291 @@
+/* Botón flotante para abrir el menú */
+.menu-toggle {
+    position: fixed;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 100px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border: none;
+    border-radius: 25px 0 0 25px;
+    cursor: pointer;
+    z-index: 10001;
+    transition: all 0.3s ease;
+    box-shadow: -5px 0 15px rgba(231, 76, 60, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .3s ease-in-out;
+}
+
+.menu-toggle:hover {
+    right: -20px;
+    box-shadow: -8px 0 25px rgba(231, 76, 60, 0.4);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.menu-toggle.active {
+    right: 380px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #27ae60, #229954);
+    box-shadow: -5px 0 15px rgba(39, 174, 96, 0.3);
+}
+
+.menu-toggle .icon {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle.active .icon {
+    transform: rotate(180deg);
+}
+
+.menu-text {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+/* Overlay para cerrar el menú */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Menú lateral */
+.side-menu {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    z-index: 10000;
+    transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    overflow-y: auto;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.menu-header {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.menu-header h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.menu-header .subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.emergency-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+}
+
+.menu-content {
+    padding: 2rem;
+    color: white;
+}
+
+.menu-section {
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 1.5rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.menu-section:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-5px);
+}
+
+.menu-section h3 {
+    color: #ecf0f1;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e74c3c;
+    display: flex;
+    align-items: center;
+}
+
+.menu-section p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.menu-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu-section li {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+.menu-section li:hover {
+    color: #ecf0f1;
+    transform: translateX(5px);
+}
+
+.menu-section li::before {
+    content: "●";
+    color: #e74c3c;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.8rem;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* Botón de emergencia */
+.emergency-button {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    animation: emergencyGlow 2s infinite;
+}
+
+@keyframes emergencyGlow {
+    0% {
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 8px 25px rgba(231, 76, 60, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    }
+}
+
+.emergency-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.5);
+}
+
+/* Scrollbar personalizado para el menú */
+.side-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.side-menu::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.side-menu::-webkit-scrollbar-thumb {
+    background: rgba(231, 76, 60, 0.7);
+    border-radius: 4px;
+}
+
+.side-menu::-webkit-scrollbar-thumb:hover {
+    background: rgba(231, 76, 60, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        right: -100%;
+    }
+
+    .menu-toggle.active {
+        right: 0;
+    }
+
+    .main-content {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

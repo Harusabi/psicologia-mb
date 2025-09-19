@@ -82,7 +82,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('/images/fotoMilagro.png');
+  background-image: url('/images/modelo-foto.jpg');
 }
 
 .divContent__imageExperience {
@@ -288,7 +288,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   width: inherit;
   height: inherit;
   padding-left: 70px;

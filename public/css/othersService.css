@@ -1,0 +1,178 @@
+:root {
+    --background-generalColor: #48a198;
+    --background-generalColor-light: #63b9b0;
+    --shadows: rgb(99, 185, 176, 0.5);
+    --textColor-titles: #f8efee;
+    --containerArticles-colors: #f6fdfd;
+    --text-colorsHover: rgb(249, 241, 240, 0.5);
+    --button-color: #168076;
+}
+
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/* first section */
+
+.mainContainer__sectionContent-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: inherit;
+    margin-bottom: 100px;
+
+    &>h2 {
+        background: linear-gradient(180deg, #7dd3c0, #4a9b8a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: 1.1px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    &>p {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* second section */
+
+.mainContainer__sectionContent-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrap {
+    flex: 0 0 300px;
+    min-width: 400px;
+    height: 420px;
+}
+
+@media (width < 1050px) {
+    .wrap {
+        flex: 1 0 300px;
+        height: 100%;
+    }
+
+    @media (width < 400px) {
+        .wrap {
+            flex: 1 0 300px;
+            min-width: 100px;
+        }
+    }
+}
+
+.mainContainer__sectionContent-two {
+    margin-bottom: 80px;
+}
+
+.containerArticle__desing {
+    position: relative;
+    background-color: var(--containerArticles-colors);
+    box-shadow: 0px 0px 40px rgb(0, 0, 0, 0.1);
+    border-radius: 23px;
+    padding: 30px;
+    margin: 20px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.containerArticle__desing::after {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    border-bottom: solid 3px var(--background-generalColor-light);
+    opacity: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.containerArticle__desing:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
+}
+
+.containerArticle__desing:hover {
+    box-shadow: 0px 10px 40px rgb(0, 0, 0, 0.2);
+}
+
+.containerArticle__desing > section:first-child {
+    margin-bottom: 30px;
+}
+
+.containerArticle__desing>section>div:first-child {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.containerArticle__desing>section>div>div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7dd3c054;
+    padding: 15px;
+    box-shadow: 0px 0px 10px var(--shadows);
+    border-radius: 10px;
+    transition: background-color .3s ease-in-out;
+}
+
+.containerArticle__desing:hover>section>div>div:first-child {
+    background-color: #7dd3c0;
+    box-shadow: 0px 0px 10px var(--shadows);
+}
+
+.containerArticle__desing>section>div:first-child>h4 {
+    background: linear-gradient(180deg, #7dd3c0, #4a9b8a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin-bottom: 0px;
+    transition: text-shadow .5s ease-in-out 1.5s;
+}
+
+.containerArticle__desing:hover>section>div>h4 {
+    text-shadow: 0px 0px 20px var(--shadows);
+}
+
+.containerArticle__desing>section>div>p {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.containerArticle__desing>section>div>ul>li {
+    color: #818181;
+    transition: color .5s ease-in-out;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: none;
+    padding-left: 10px;
+    gap: 20px;
+}
+
+.containerArticle__desing>section>div>ul>li:hover {
+    color: var(--background-generalColor-light);
+}
