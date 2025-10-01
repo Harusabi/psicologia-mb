@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (tipo === 'contactar') {
                     window.location.href = href;
                 }
+
+                if (tipo === 'terapias') {
+                    window.location.href = href;
+                }
             });
         });
     };

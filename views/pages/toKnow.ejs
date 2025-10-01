@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre mi | MB</title>
-    <link rel="stylesheet" href="/css/toKnow.css" />
-  </head>
-  <body>
-    <%- include('../templates/header')%>
 
-    <main class="mainContainer__contentSections">
-      <section class="contentSections__section-one">
-        <div class="sectionOne__divContent">
-          <div>
-            <div class="divContent__imageExperience">
-              <div>
-                <span>Años de</span>
-                <span>experiencia</span>
-              </div>
-              <div>
-                <span>+5</span>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre mi | MB</title>
+  <link rel="stylesheet" href="/css/toKnow.css" />
+</head>
+
+<body>
+  <%- include('../templates/header')%>
+
+  <main class="mainContainer__contentSections">
+    <section class="contentSections__section-one">
+      <div class="sectionOne__divContent">
+        <div>
+          <div class="divContent__imageExperience">
+            <div>
+              <span>Años de</span>
+              <span>experiencia</span>
+            </div>
+            <div>
+              <span>+5</span>
             </div>
           </div>
         </div>
-        <article class="sectionOne__articleContent">
-          <div><span>Mi</span><span>historia</span></div>
-          <div><span>Psicologa Milagro Bolaño</span></div>
+      </div>
+      <article class="sectionOne__articleContent">
+        <div><span>Mi</span><span>historia</span></div>
+        <div><span>Psicologa Milagro Bolaño</span></div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            beatae nisi laboriosam tempore consequatur ex quod eum sequi
+            provident iste doloribus, quos excepturi quia omnis iure expedita
+            magni mollitia debitis.
+          </p>
+        </div>
+        <div class="articleContent__divSignature">
           <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              beatae nisi laboriosam tempore consequatur ex quod eum sequi
-              provident iste doloribus, quos excepturi quia omnis iure expedita
-              magni mollitia debitis.
-            </p>
-          </div>
-          <div class="articleContent__divSignature">
             <div>
-              <div><div class="lineTop__divide"></div></div>
-              <div>
-                <div>
-                  <span>Milagro Bolaño</span>
-                </div>
-                <div>
-                  <span>PSICOLOGA</span>
-                </div>
-              </div>
+              <div class="lineTop__divide"></div>
             </div>
             <div>
-              <div class="lineTop__divide lineTop__divideImage"></div>
               <div>
-                <img
-                src="/images/firmaMilagro-prueba.png"
-                alt="Firma psicologa MB" />
+                <span>Milagro Bolaño</span>
+              </div>
+              <div>
+                <span>PSICOLOGA</span>
               </div>
             </div>
           </div>
-        </article>
-      </section>
-      <section class="contentSections__section-two">
-        <%- include('../templates/directContact')%>
-      </section>
-      <section class="contentSections__section-three">
-        <%- include('../templates/F&Q.ejs', {
+          <div>
+            <div class="lineTop__divide lineTop__divideImage"></div>
+            <div>
+              <img src="/images/firmaMilagro-prueba.png" alt="Firma psicologa MB" />
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="contentSections__section-two">
+      <%- include('../templates/directContact')%>
+    </section>
+    <section class="contentSections__section-three">
+      <%- include('../templates/F&Q.ejs', {
           option: true,
           content: 'Lorem ipsu dolor...',
           questions: [{q: 'Pregunta 1', a: 'Lorem ipsu dolor...'},
@@ -70,11 +72,14 @@
           {q: 'Pregunta 3', a: 'Lorem ipsu dolor...'},
           {q: 'Pregunta 4', a: 'Lorem ipsu dolor...'}]
         })%>
-      </section>
-    </main>
+    </section>
+  </main>
 
-    <%- include('../templates/footer')%>
+  <%- include('../templates/footer')%>
 
-    <script src="/js/toKnow.js" defer></script>
-  </body>
+  <script src="/js/toKnow.js" defer></script>
+
+  <script src="/js/redirectPage.js" defer></script>
+</body>
+
 </html>

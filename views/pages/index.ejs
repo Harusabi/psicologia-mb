@@ -1,113 +1,108 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Psicologa | MB</title>
-    <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/css/whatsContainer.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Great+Vibes&display=swap"
-      rel="stylesheet" />
-  </head>
-  <body class="bodyContainer">
-    <div
-      class="d-none d-md-block carousel-inner bodyContainer__gifVideo">
-      <div class="gifVideo__content">
 
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Psicologa | MB</title>
+  <link rel="stylesheet" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/whatsContainer.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Great+Vibes&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bodyContainer">
+  <div class="d-none d-md-block carousel-inner bodyContainer__gifVideo">
+    <div class="gifVideo__content">
+
     </div>
+  </div>
 
-    <%- include("../templates/header") %>
+  <%- include("../templates/header") %>
 
-    <main class="bodyMain">
-      <section class="bodyMain__sectionArticles">
-        <article class="sectionArticles__divContent">
-          <div class="divContent__divT-one">
-            <span><h3>Historia y</h3></span>
-            <span><h3>motivacion</h3></span>
+  <main class="bodyMain">
+    <section class="bodyMain__sectionArticles">
+      <article class="sectionArticles__divContent">
+        <div class="divContent__divT-one">
+          <span>
+            <h3>Historia y</h3>
+          </span>
+          <span>
+            <h3>motivacion</h3>
+          </span>
+        </div>
+
+        <div class="divContent__divP-two">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur sit soluta similique, eaque quasi earum ab autem ut
+            iste in quis ea doloribus, temporibus nemo, animi beatae
+            voluptatum et odit?F
+          </p>
+        </div>
+
+        <div class="divContent__divB-three">
+          <button class="navbar__divButton" data-href="/conoceme" data-type="sobre mi">
+            Sobre mi
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <section class="bodyMain__sectionArticles article-two">
+      <article class="sectionArticles__divContent divContent-two">
+        <div class="row g-2">
+          <div class="col-8 containerImage__divOne">
+            <img src="/images/fotoMilagro-cuadro.jpg" class="img-fluid w-100 rounded" alt="" />
+          </div>
+          <div class="col-4 containerImage__divTwo">
+            <img src="/images/fotoMilagro-cuadro.jpg" class="img-fluid w-100 mb-2 rounded" alt="" />
+            <img src="/images/fotoMilagro-cuadro.jpg" class="img-fluid w-100 rounded" alt="" />
+          </div>
+        </div>
+        <div id="container_equipoConformado" class="divContent__divTwo">
+          <div class="divT-articleTwo">
+            <span>
+              <h3>Equipo conformado</h3>
+            </span>
           </div>
 
-          <div class="divContent__divP-two">
+          <div class="d-none d-lg-block divContent__divP-two divP-articleTwo">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur sit soluta similique, eaque quasi earum ab autem ut
-              iste in quis ea doloribus, temporibus nemo, animi beatae
-              voluptatum et odit?F
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. iste in
+              quis ea doloribus, temporibus nemo, animi beatae voluptatum et
+              odit?F Consectetur sit soluta similique, eaque quasi earum ab
+              autem ut Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Culpa dolorum, modi adipisci cumque tempora aut voluptas
+              nihil accusamus praesentium ducimus obcaecati id totam alias
+              eveniet libero minus repellat. Tempora, suscipit!
             </p>
           </div>
 
-          <div class="divContent__divB-three">
-            <button
-              class="navbar__divButton"
-              data-href="/conoceme"
-              data-type="sobre mi">
-              Sobre mi
-            </button>
-          </div>
-        </article>
-      </section>
-
-      <section class="bodyMain__sectionArticles article-two">
-        <article class="sectionArticles__divContent divContent-two">
-          <div class="row g-2">
-            <div class="col-8 containerImage__divOne">
-              <img
-                src="/images/fotoMilagro-cuadro.jpg"
-                class="img-fluid w-100 rounded"
-                alt="" />
+          <div class="d-block d-lg-none divB-articleTwo">
+            <div class="articleTwo__containerButton">
+              <button class="navbar__divButton">Mas informacion</button>
             </div>
-            <div class="col-4 containerImage__divTwo">
-              <img
-                src="/images/fotoMilagro-cuadro.jpg"
-                class="img-fluid w-100 mb-2 rounded"
-                alt="" />
-              <img
-                src="/images/fotoMilagro-cuadro.jpg"
-                class="img-fluid w-100 rounded"
-                alt="" />
-            </div>
-          </div>
-          <div class="divContent__divTwo">
-            <div class="divT-articleTwo">
-              <span><h3>Equipo conformado</h3></span>
-            </div>
-
-            <div class="d-none d-lg-block divContent__divP-two divP-articleTwo">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. iste in
-                quis ea doloribus, temporibus nemo, animi beatae voluptatum et
-                odit?F Consectetur sit soluta similique, eaque quasi earum ab
-                autem ut Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Culpa dolorum, modi adipisci cumque tempora aut voluptas
-                nihil accusamus praesentium ducimus obcaecati id totam alias
-                eveniet libero minus repellat. Tempora, suscipit!
-              </p>
-            </div>
-
-            <div class="d-block d-lg-none divB-articleTwo">
-              <div class="articleTwo__containerButton">
-                <button class="navbar__divButton">Mas informacion</button>
-              </div>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section class="article-three">
-        <div class="threeDiv__divsContent">
-          <div class="divsContent__div-one">
-            <span><h2>"Objetivo"</h2></span>
-          </div>
-          <div class="divsContent__div-two">
-            <img src="/images/logonuevo-sinfondo.webp" alt="logotipoMilagro" />
           </div>
         </div>
-      </section>
+      </article>
+    </section>
 
-      <section class="bodyMain__sectionArticles article-four">
-        <article class="sectionArticles__divContent divContent-four">
-          <%- include('../templates/aditionalInformation', {
+    <section class="article-three">
+      <div class="threeDiv__divsContent">
+        <div class="divsContent__div-one">
+          <span>
+            <h2>"Objetivo"</h2>
+          </span>
+        </div>
+        <div class="divsContent__div-two">
+          <img src="/images/logonuevo-sinfondo.webp" alt="logotipoMilagro" />
+        </div>
+      </div>
+    </section>
+
+    <section class="bodyMain__sectionArticles article-four">
+      <article class="sectionArticles__divContent divContent-four">
+        <%- include('../templates/aditionalInformation', {
             idParameter: 1,
             moreInformation: false,
             optionBenefit: false,
@@ -119,61 +114,46 @@
             }
             ]
           })%>
-          <div class="divContent__divFour">
-            <div class="divT-articleFour">
-              <span
-                ><h3>Psicoterapia</h3>
-                <h3>online</h3></span
-              >
+        <div class="divContent__divFour">
+          <div class="divT-articleFour">
+            <span>
+              <h3>Psicoterapia</h3>
+              <h3>online</h3>
+            </span>
+          </div>
+
+          <div>
+            <div class="d-none d-sm-block divContent__divP-four divP-articleFour">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate excepturi aperiam quia, libero nostrum nam eum
+                dignissimos ducimus quaerat veniam reprehenderit molestias
+                officia corporis minima doloremque, voluptatem assumenda.
+                Nulla, soluta.
+              </p>
             </div>
 
-            <div>
-              <div
-                class="d-none d-sm-block divContent__divP-four divP-articleFour">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate excepturi aperiam quia, libero nostrum nam eum
-                  dignissimos ducimus quaerat veniam reprehenderit molestias
-                  officia corporis minima doloremque, voluptatem assumenda.
-                  Nulla, soluta.
-                </p>
-              </div>
-
-              <div class="divB-articleFour">
-                <div class="articleFour__containerButton">
-                  <button class="navbar__divButton">Contactar</button>
-                </div>
+            <div class="divB-articleFour">
+              <div class="articleFour__containerButton">
+                <button class="navbar__divButton" data-href="/terapias#containerPsicologia_online" data-type="terapias">Me interesa</button>
               </div>
             </div>
           </div>
-        </article>
-        <div class="divVideo__contentFour-two">
-          <iframe
-            width="500"
-            height="315"
-            src="https://www.youtube.com/embed/ID_DEL_VIDEO"
-            title="Todo lo que necesitas sobre Psicoterapia online"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
         </div>
-      </section>
+      </article>
+      <div class="divVideo__contentFour-two">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/ID_DEL_VIDEO" title="Todo lo que necesitas sobre Psicoterapia online" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </section>
 
-      <section class="bodyMain__sectionArticles article-five">
-        <div class="divVideo__contentFive-two">
-          <iframe
-            width="500"
-            height="315"
-            src="https://www.youtube.com/embed/ID_DEL_VIDEO"
-            title="Todo lo que necesitas sobre Psicoterapia online"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-        <article class="sectionArticles__divContent divContent-five">
-          <%- include('../templates/aditionalInformation', {
+    <section class="bodyMain__sectionArticles article-five">
+      <div class="divVideo__contentFive-two">
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/ID_DEL_VIDEO" title="Todo lo que necesitas sobre Psicoterapia online" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <article class="sectionArticles__divContent divContent-five">
+        <%- include('../templates/aditionalInformation', {
             idParameter: 0,
             moreInformation: false,
             optionBenefit: false,
@@ -185,232 +165,228 @@
             }
             ]
           })%>
-          <div class="divContent__divFive">
-            <div class="divT-articleFive">
-              <span
-                ><h3>Psicoterapia</h3>
-                <h3>presencial</h3></span
-              >
-            </div>
-
-            <div>
-              <div
-                class="d-none d-sm-block divContent__divP-four divP-articleFive">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cupiditate excepturi aperiam quia, libero nostrum nam eum
-                  dignissimos ducimus quaerat veniam reprehenderit molestias
-                  officia corporis minima doloremque, voluptatem assumenda.
-                  Nulla, soluta.
-                </p>
-              </div>
-
-              <div class="divB-articleFive">
-                <div class="articleFive__containerButton">
-                  <button class="navbar__divButton">Me interesa</button>
-                </div>
-              </div>
-            </div>
+        <div class="divContent__divFive">
+          <div class="divT-articleFive">
+            <span>
+              <h3>Psicoterapia</h3>
+              <h3>presencial</h3>
+            </span>
           </div>
-        </article>
-      </section>
 
-      <section class="article-six">
-        <div class="divContent-six">
-          <div class="divContent__one-six">
-            <div class="contentOne__div-six">
-              <div>
-                <div>
-                  <img
-                    src="/images/logonuevo-sinfondo_noPsicologa.webp"
-                    alt="Imagen de capacitacion" />
-                </div>
-              </div>
-              <div>
-                <span><h3>Capacitaciones</h3></span>
-              </div>
-              <div>
-                <div>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Repellat ipsum nostrum sit cumque aspernatur necessitatibus
-                    consectetur. Sunt, harum, eum enim sit, vitae mollitia illo
-                    ut quasi corporis quisquam id voluptates?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="divContent__one-six">
-            <div class="contentOne__div-six">
-              <div>
-                <div>
-                  <img
-                    src="/images/logonuevo-sinfondo_noPsicologa.webp"
-                    alt="Imagen de terapia" />
-                </div>
-              </div>
-              <div>
-                <span><h3>Terapias</h3></span>
-              </div>
-              <div>
-                <div>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Repellat ipsum nostrum sit cumque aspernatur necessitatibus
-                    consectetur. Sunt, harum, eum enim sit, vitae mollitia illo
-                    ut quasi corporis quisquam id voluptates?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="divContent__one-six">
-            <div class="contentOne__div-six">
-              <div>
-                <div>
-                  <img
-                    src="/images/logonuevo-sinfondo_noPsicologa.webp"
-                    alt="Imagen de orientacion" />
-                </div>
-              </div>
-              <div>
-                <span>
-                  <h3>Orientacion</h3>
-                </span>
-              </div>
-              <div>
-                <div>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Repellat ipsum nostrum sit cumque aspernatur necessitatibus
-                    consectetur. Sunt, harum, eum enim sit, vitae mollitia illo
-                    ut quasi corporis quisquam id voluptates?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="article-seven">
-        <div class="articleSeven-divContent">
-          <div class="divContent__buttonDiv-seven">
-            <button>Mas informacion</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="article-nine">
-        <%- include('../templates/directContact.ejs')%>
-      </section>
-
-      <section class="article-eight">
-        <article class="article__divContent-eight">
-          <div class="divContent__divsOne-eight">
-            <div class="divsOne__divT-eight">
-              <span><h3>Preguntas mas</h3></span>
-              <span><h3>Frecuentes</h3></span>
-            </div>
-
-            <div class="divsOne__divP-eight">
+          <div>
+            <div class="d-none d-sm-block divContent__divP-four divP-articleFive">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur sit soluta similique, eaque quasi earum ab autem ut
-                iste in quis ea doloribus, temporibus nemo, animi beatae
-                voluptatum et odit?F
+                Cupiditate excepturi aperiam quia, libero nostrum nam eum
+                dignissimos ducimus quaerat veniam reprehenderit molestias
+                officia corporis minima doloremque, voluptatem assumenda.
+                Nulla, soluta.
               </p>
             </div>
 
-            <div class="divsOne__divB-eight">
-              <button class="navbar__divButton">Contactar</button>
-            </div>
-          </div>
-
-          <div class="divContent__divsTwo-eight">
-            <div class="divsOne__listQuestions-eight">
-              <div class="listQuestions__divContent-eight">
-                <ul class="listQuestions__ul-eight">
-                  <li class="ul__li-eight">
-                    <div class="li__questionsAndBurgures-eight">
-                      <div>
-                        <span> "Pregunta frecuente 1" </span>
-                      </div>
-                      <div class="ulContent__divSpan-eight">
-                        <span
-                          class="divSpan__shapeOne"
-                          data-burgerAnimation="oneSpan"></span>
-                        <span
-                          class="divSpan__shapeTwo"
-                          data-burgerAnimation="twoSpan"></span>
-                        <span
-                          class="divSpan__shapeThree"
-                          data-burgerAnimation="threeSpan"></span>
-                      </div>
-                    </div>
-
-                    <div class="divResponse__paragraph-eight">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Esse, ut? Deserunt dolore iusto sapiente ea explicabo
-                        eos. Aperiam nihil rem error vero magni. Cum, molestias
-                        vero odit sed quam at.
-                      </p>
-                    </div>
-                  </li>
-                  <li class="ul__li-eight">
-                    <div class="li__questionsAndBurgures-eight">
-                      <div>
-                        <span> "Pregunta frecuente 2" </span>
-                      </div>
-                      <div class="ulContent__divSpan-eight">
-                        <span class="divSpan__shapeOne"></span>
-                        <span class="divSpan__shapeTwo"></span>
-                        <span class="divSpan__shapeThree"></span>
-                      </div>
-                    </div>
-                    <div class="divResponse__paragraph-eight">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ipsa ducimus rerum odit, veniam impedit, commodi itaque
-                        neque ex natus maiores, sed harum dicta quo doloribus
-                        suscipit dolores error dolorum culpa?
-                      </p>
-                    </div>
-                  </li>
-                  <li class="ul__li-eight">
-                    <div class="li__questionsAndBurgures-eight">
-                      <div>
-                        <span>"Pregunta frecuente 3"</span>
-                      </div>
-                      <div class="ulContent__divSpan-eight">
-                        <span class="divSpan__shapeOne"></span>
-                        <span class="divSpan__shapeTwo"></span>
-                        <span class="divSpan__shapeThree"></span>
-                      </div>
-                    </div>
-                    <div class="divResponse__paragraph-eight">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Culpa soluta dolores deserunt in quis unde esse
-                        mollitia nobis quibusdam exercitationem possimus ducimus
-                        doloremque, debitis laudantium reprehenderit rem
-                        obcaecati nisi fugiat?
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+            <div class="divB-articleFive">
+              <div class="articleFive__containerButton">
+                <button class="navbar__divButton" data-href="/terapias#containerPsicologia_presencial" data-type="terapias">Me interesa</button>
               </div>
             </div>
           </div>
-        </article>
-      </section>
-    </main>
-    <%- include("../templates/footer") %>
-    <%- include("../templates/whatsContainer") %>
+        </div>
+      </article>
+    </section>
 
-    <script src="/js/index.js" defer></script>
-    <script src="/js/redirectPage.js" defer></script>
-  </body>
+    <section class="article-six">
+      <div class="divContent-six">
+        <div class="divContent__one-six">
+          <div class="contentOne__div-six">
+            <div>
+              <div>
+                <img src="/images/logonuevo-sinfondo_noPsicologa.webp" alt="Imagen de capacitacion" />
+              </div>
+            </div>
+            <div>
+              <span>
+                <h3>Capacitaciones</h3>
+              </span>
+            </div>
+            <div>
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat ipsum nostrum sit cumque aspernatur necessitatibus
+                  consectetur. Sunt, harum, eum enim sit, vitae mollitia illo
+                  ut quasi corporis quisquam id voluptates?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divContent__one-six">
+          <div class="contentOne__div-six">
+            <div>
+              <div>
+                <img src="/images/logonuevo-sinfondo_noPsicologa.webp" alt="Imagen de terapia" />
+              </div>
+            </div>
+            <div>
+              <span>
+                <h3>Terapias</h3>
+              </span>
+            </div>
+            <div>
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat ipsum nostrum sit cumque aspernatur necessitatibus
+                  consectetur. Sunt, harum, eum enim sit, vitae mollitia illo
+                  ut quasi corporis quisquam id voluptates?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divContent__one-six">
+          <div class="contentOne__div-six">
+            <div>
+              <div>
+                <img src="/images/logonuevo-sinfondo_noPsicologa.webp" alt="Imagen de orientacion" />
+              </div>
+            </div>
+            <div>
+              <span>
+                <h3>Orientacion</h3>
+              </span>
+            </div>
+            <div>
+              <div>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Repellat ipsum nostrum sit cumque aspernatur necessitatibus
+                  consectetur. Sunt, harum, eum enim sit, vitae mollitia illo
+                  ut quasi corporis quisquam id voluptates?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-seven">
+      <div class="articleSeven-divContent">
+        <div class="divContent__buttonDiv-seven">
+          <button class="navbar__divButton" data-type="terapias" data-href="/terapias">Mas informacion</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="article-nine">
+      <%- include('../templates/directContact.ejs')%>
+    </section>
+
+    <section class="article-eight">
+      <article class="article__divContent-eight">
+        <div class="divContent__divsOne-eight">
+          <div class="divsOne__divT-eight">
+            <span>
+              <h3>Preguntas mas</h3>
+            </span>
+            <span>
+              <h3>Frecuentes</h3>
+            </span>
+          </div>
+
+          <div class="divsOne__divP-eight">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur sit soluta similique, eaque quasi earum ab autem ut
+              iste in quis ea doloribus, temporibus nemo, animi beatae
+              voluptatum et odit?F
+            </p>
+          </div>
+
+          <div class="divsOne__divB-eight">
+            <button class="navbar__divButton" data-type="contactar" data-href="/contacto">Contactar</button>
+          </div>
+        </div>
+
+        <div id="container_preguntasFrecuentas" class="divContent__divsTwo-eight">
+          <div class="divsOne__listQuestions-eight">
+            <div class="listQuestions__divContent-eight">
+              <ul class="listQuestions__ul-eight">
+                <li class="ul__li-eight">
+                  <div class="li__questionsAndBurgures-eight">
+                    <div>
+                      <span> "Pregunta frecuente 1" </span>
+                    </div>
+                    <div class="ulContent__divSpan-eight">
+                      <span class="divSpan__shapeOne" data-burgerAnimation="oneSpan"></span>
+                      <span class="divSpan__shapeTwo" data-burgerAnimation="twoSpan"></span>
+                      <span class="divSpan__shapeThree" data-burgerAnimation="threeSpan"></span>
+                    </div>
+                  </div>
+
+                  <div class="divResponse__paragraph-eight">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Esse, ut? Deserunt dolore iusto sapiente ea explicabo
+                      eos. Aperiam nihil rem error vero magni. Cum, molestias
+                      vero odit sed quam at.
+                    </p>
+                  </div>
+                </li>
+                <li class="ul__li-eight">
+                  <div class="li__questionsAndBurgures-eight">
+                    <div>
+                      <span> "Pregunta frecuente 2" </span>
+                    </div>
+                    <div class="ulContent__divSpan-eight">
+                      <span class="divSpan__shapeOne"></span>
+                      <span class="divSpan__shapeTwo"></span>
+                      <span class="divSpan__shapeThree"></span>
+                    </div>
+                  </div>
+                  <div class="divResponse__paragraph-eight">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsa ducimus rerum odit, veniam impedit, commodi itaque
+                      neque ex natus maiores, sed harum dicta quo doloribus
+                      suscipit dolores error dolorum culpa?
+                    </p>
+                  </div>
+                </li>
+                <li class="ul__li-eight">
+                  <div class="li__questionsAndBurgures-eight">
+                    <div>
+                      <span>"Pregunta frecuente 3"</span>
+                    </div>
+                    <div class="ulContent__divSpan-eight">
+                      <span class="divSpan__shapeOne"></span>
+                      <span class="divSpan__shapeTwo"></span>
+                      <span class="divSpan__shapeThree"></span>
+                    </div>
+                  </div>
+                  <div class="divResponse__paragraph-eight">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing
+                      elit. Culpa soluta dolores deserunt in quis unde esse
+                      mollitia nobis quibusdam exercitationem possimus ducimus
+                      doloremque, debitis laudantium reprehenderit rem
+                      obcaecati nisi fugiat?
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <%- include("../templates/footer") %>
+  <%- include("../templates/whatsContainer") %>
+
+  <script src="/js/index.js" defer></script>
+  <script src="/js/redirectPage.js" defer></script>
+</body>
+
 </html>
